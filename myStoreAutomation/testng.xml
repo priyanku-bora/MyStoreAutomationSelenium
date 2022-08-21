@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.mystore.utility.ListenerClass"></listener>
+    </listeners>
+     <parameter name="browser" value="Edge"></parameter>
+    <test verbose="2" preserve-order="true" name="C:/Users/pribora/Desktop/CodeAmp/Automation/myStoreAutomation/src/test/java/com/mystore/testcases">
+        <classes>
+            <class name="com.mystore.testcases.IndexPageTest">
+                <methods><include name="verifyLogo"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
